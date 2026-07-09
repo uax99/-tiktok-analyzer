@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>مرصد — تحليل الاتصال الاستراتيجي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">مرصد</span>
+  </div>
+  <span class="topbar-tag">تحليل اتصال استراتيجي · بيانات حية فقط</span>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">أداة تحليل — منهجية 9 خطوات</p>
+    <h1>كل معلومة هنا لها ختم.<br>ما نؤلّف، نوثّق.</h1>
+    <p class="hero-sub">أدخلي معرّف حساب TikTok، ونستخرج بياناته الحقيقية عبر مصدر مباشر، ثم نحلّلها وفق منهجية الاتصال الاستراتيجي الأكاديمية — كل بند إما موثّق من المصدر، أو نصرّح بأنه غير متوفر.</p>
+
+    <form id="analyze-form" class="scanner">
+      <span class="scanner-at">@</span>
+      <input type="text" id="username" placeholder="اسم المستخدم على TikTok" autocomplete="off" required />
+      <button type="submit" id="submit-btn">تحليل</button>
+    </form>
+    <p class="hero-note" id="status-note"></p>
+  </section>
+
+  <section id="result" class="result hidden">
+    <div class="result-header">
+      <div class="profile-strip" id="profile-strip"></div>
+    </div>
+    <article id="report-body" class="report-body"></article>
+  </section>
+
+  <section id="error-box" class="error-box hidden">
+    <span class="error-icon">⚠</span>
+    <p id="error-message"></p>
+  </section>
+</main>
+
+<footer>
+  <p>البيانات تُستخرج مباشرة من TikTok عبر مصدر خارجي موثّق. لا تُستخدم ذاكرة الذكاء الاصطناعي كبديل عن بيانات حقيقية.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
